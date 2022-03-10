@@ -61,6 +61,10 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 
+		app.GET("/books", BooksIndex)
+		app.POST("/books", BooksCreate)
+		app.GET("/books/new", BooksForm)
+		app.GET("/books/{id}", BooksShow)
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
 

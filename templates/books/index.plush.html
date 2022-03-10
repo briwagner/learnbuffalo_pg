@@ -1,0 +1,9 @@
+<h1>Books</h1>
+
+<ol>
+  <%= for (b) in books { %>
+    <li><%= linkTo(b) { %> <%= b.Name %> <% } %></li>
+    <% } %>
+</ol>
+
+<p><%= linkTo("/books/new", {body: "New", class: "btn btn-primary"}) %></p>

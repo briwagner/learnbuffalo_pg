@@ -1,0 +1,7 @@
+create_table("books") {
+	t.Column("id", "uuid", {primary: true})
+  t.Column("name", "string", {})
+  t.Column("author", "string", {})
+  t.Column("description", "string", {})
+	t.Timestamps()
+}

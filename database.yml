@@ -1,9 +1,9 @@
 ---
 development:
   dialect: postgres
-  database: learnbuffalo_pg_development
-  user: postgres
-  password: postgres
+  database: learnbuffalo_pg_dev
+  user: admin
+  password: twilight
   host: 127.0.0.1
   pool: 5
 
